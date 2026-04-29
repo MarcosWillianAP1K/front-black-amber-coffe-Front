@@ -1,7 +1,8 @@
 version: '3.8'
 
+name: black-amber-coffe-admin
 services:
-  front-react:
+  front-admin:
     build:
       context: .
       dockerfile: Dockerfile.dev   # Aponta para o novo arquivo de desenvolvimento
