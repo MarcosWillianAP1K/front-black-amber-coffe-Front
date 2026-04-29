@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  front-react:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev   # Aponta para o novo arquivo de desenvolvimento
+    container_name: Front-Admin
+    ports:
+      - "5173:5173"                # Mapeia a porta do Vite
+    volumes:
+      - .:/app                     # O TÚNEL: Espelha a sua pasta atual para o /app do Linux
+      - /app/node_modules          # Protege o node_modules do container contra o do Windows
+    restart: always
