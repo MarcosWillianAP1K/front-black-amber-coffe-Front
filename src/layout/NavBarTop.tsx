@@ -1,10 +1,10 @@
 function NavBarTop() {
     return (
        
-        <div className="w-full h-14 bg-[#131313] text-white flex items-center justify-between px-6">
+        <div className="w-full h-14 bg-(--Nav-bars-background) text-white flex items-center justify-between px-6">
             
             <div>
-                <h1 className="text-[#F5D08A] font-medium text-lg">Black Amber</h1>
+                <h1 className="text-(--Primary) font-medium text-lg">Black Amber</h1>
             </div>
 
             

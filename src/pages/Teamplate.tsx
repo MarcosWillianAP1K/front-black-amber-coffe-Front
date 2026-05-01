@@ -4,14 +4,14 @@ import NavBarLeft from "../layout/NavBarLeft";
 
 function Teamplate() {
     return (
-        <div>
+        <div className="w-full h-screen bg-(--Page-background) ">
             <NavBarTop />
 
             <div className="flex">
                 <NavBarLeft />
                 <div className="p-4 scroll-auto">
                     {/* Page content */}
-                    <h1>Page content</h1>
+                    <h1 className="text-white">Page content</h1>
                 </div>
             </div>
 
