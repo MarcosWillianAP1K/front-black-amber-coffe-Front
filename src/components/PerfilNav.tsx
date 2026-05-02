@@ -3,7 +3,7 @@ import { ButtonPrimary } from "./buttons/ButtonPrimary";
 
 export function PerfilNav() {
     return (
-        <div className="px-6">
+        <div className="px-6 items-center">
             <div className="flex items-center gap-3 mb-6">
                 <img
                     src="https://github.com/MarcosWillian.png" // Puxando sua foto do Github de exemplo

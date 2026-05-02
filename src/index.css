@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 
+
+
 @theme "dark" {
 
+    /* Cores */
     --Primary: #FFBF00;
     --Primary-selected: #FFCB2F;
     --Primary-off: #FFDFA0;
-    --Primary-20%: #D7A30A;
+    --Primary-20: #D7A30A;
 
 
     --Text-gray: #E5E2E1;
@@ -28,10 +31,18 @@
 
     --Negacion: #970909;
     --Negacion-off: #93000A;
-    --Neutral-30%: #131313;
+    --Neutral-30: #131313;
     --Afirmation: #00B637;
 
 
     --White: #FFFFFF;
     --Gradient: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 100%);
+
+
+
+    /* amílias de Fonte */
+  --Font-primary: 'Manrope', sans-serif;
+  --Font-secondary: 'Inter', sans-serif;
 }
+
+

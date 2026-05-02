@@ -2,6 +2,8 @@ import {NavBarTop}  from "../layout/NavBarTop";
 import { NavBarLeft } from "../layout/NavBarLeft";
 
 
+import { LiveOrders } from "./content/LiveOrders";
+
 export function Teamplate() {
     return (
         <div className="w-full h-full bg-(--Page-background) ">
@@ -9,9 +11,10 @@ export function Teamplate() {
 
             <div className="flex">
                 <NavBarLeft />
-                <div className="w-full p-4 scroll-auto">
-                    {/* Page content */}
-                    <h1 className="text-white">Page content</h1>
+
+                {/* Main Content */}
+                <div className="w-full px-6 py-4 scroll-auto">
+                    <LiveOrders />
                 </div>
             </div>
 
