@@ -1,8 +1,8 @@
-import NavBarTop  from "../layout/NavBarTop";
+import {NavBarTop}  from "../layout/NavBarTop";
 import { NavBarLeft } from "../layout/NavBarLeft";
 
 
-function Teamplate() {
+export function Teamplate() {
     return (
         <div className="w-full h-full bg-(--Page-background) ">
             <NavBarTop />

@@ -1,4 +1,4 @@
-import Teamplate from "./pages/Teamplate.tsx";
+import {Teamplate} from "./pages/Teamplate.tsx";
 
 function App() {
   return (
