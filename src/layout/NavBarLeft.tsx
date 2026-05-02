@@ -1,31 +1,72 @@
-import ButtonNavLeft from "../components/buttons/ButtonNavLeft"
+import { useState } from "react";
+
+import {
+    LayoutDashboard,
+    Menu,
+    Activity,
+    Archive,
+    BarChart2,
+    Users,
+    HelpCircle,
+    LogOut
+} from "lucide-react";
 
 
-function NavBarLeft() {
+import { NavItem } from "../components/buttons/NavItem";
+import { PerfilNav } from "../components/PerfilNav";
+
+
+
+export function NavBarLeft() {
+    // Estado provisório para controlar qual menu está ativo
+    const [activeItem, setActiveItem] = useState("Live Orders");
+
+    // Lista dos menus principais para não precisarmos repetir código
+    const mainLinks = [
+        { label: "Dashboard", icon: LayoutDashboard },
+        { label: "Menu", icon: Menu },
+        { label: "Live Orders", icon: Activity },
+        { label: "Inventory", icon: Archive },
+        { label: "Analytics", icon: BarChart2 },
+        { label: "Staff", icon: Users },
+    ];
+
     return (
+        <aside className="w-69 h-screen bg-(--Widget-background) flex flex-col py-6 gap-6">
 
-        <div className="w-69 h-screen p-4 bg-(--Widgets-background) text-white items-center justify-between flex flex-col">
+            
+            {/* SEÇÃO 1: Perfil do Usuário */}
+            <PerfilNav />
 
-            <h2 className="text-2xl font-bold p-4">Menu</h2>
 
-            <div className="h-full">
+            {/* SEÇÃO 2: Navegação Principal */}
+            <nav className="flex-1">
+                {mainLinks.map((link) => (
+                    <NavItem
+                        key={link.label}
+                        icon={link.icon}
+                        label={link.label}
+                        isActive={activeItem === link.label}
+                        onClick={() => setActiveItem(link.label)}
+                    />
+                ))}
+            </nav>
 
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-                
+
+            {/* SEÇÃO 3: Rodapé (Suporte e Logout) */}
+            <div className="mt-auto">
+                <NavItem
+                    icon={HelpCircle}
+                    label="Support"
+                    onClick={() => console.log("Abrir suporte")}
+                />
+                <NavItem
+                    icon={LogOut}
+                    label="Logout"
+                    onClick={() => console.log("Fazer logout")}
+                />
             </div>
 
-            <div>
-                <ButtonNavLeft />
-                <ButtonNavLeft />
-            </div>
-
-        </div>
-    )
+        </aside>
+    );
 }
-
-export default NavBarLeft

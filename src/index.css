@@ -4,6 +4,7 @@
 @theme "dark" {
 
     --Primary: #FFBF00;
+    --Primary-selected: #FFCB2F;
     --Primary-off: #FFDFA0;
     --Primary-20%: #D7A30A;
 
@@ -14,9 +15,9 @@
 
 
     --Page-background: #131313;
-    --Widgets-background: #1C1B1B;
-    --Buttons-background: #353534;
-    --Nav-bars-background: #131313;
+    --Widget-background: #1C1B1B;
+    --Button-background: #353534;
+    --Nav-bar-background: #131313;
     --Select-background: #2A2A2A;
     --Note-background: #0E0E0E;
 
