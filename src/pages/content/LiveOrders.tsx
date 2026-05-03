@@ -60,7 +60,7 @@ export function LiveOrders() {
             <ButtonPrimary>
                 <span>+</span>
 
-                <p className="text-(--Text-dark) text-[14px] font-bold">Register New Order</p>
+                <p className="text-(--Text-dark) text-[14px] font-primary font-bold">Register New Order</p>
 
             </ButtonPrimary>
 

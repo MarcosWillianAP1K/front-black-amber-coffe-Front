@@ -12,8 +12,8 @@ export function PerfilNav() {
                 />
 
                 <div className="flex flex-col">
-                    <h2 className="text-(--Primary) font-bold text-lg leading-tight">The Obsidian</h2>
-                    <span className="text-[10px] text-(--Text-gray) tracking-wider">MANAGEMENT PORTAL</span>
+                    <h2 className="text-(--Primary) font-primary font-bold text-lg leading-tight">The Obsidian</h2>
+                    <span className="text-[10px] text-(--Text-gray) font-secondary tracking-wider">MANAGEMENT PORTAL</span>
                 </div>
             </div>
 

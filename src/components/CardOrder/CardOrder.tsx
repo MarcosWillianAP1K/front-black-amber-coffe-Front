@@ -22,8 +22,8 @@ export function CardOrder({ customer = "", code = "", items = {}, observations =
                 <div className="flex w-full justify-between ">
 
                     <div className="w-full h-full">
-                        <p className="text-(--Text-primary-off) text-[10px]">{code}</p>
-                        <h1 className="text-(--Primary-off) text-lg font-bold">{customer}</h1>
+                        <p className="text-(--Text-primary-off) font-secondary text-[10px]">#{code}</p>
+                        <h1 className="text-(--Primary-off) text-lg font-primary font-bold">{customer}</h1>
                     </div>
 
                     <OrderState status={status} />
