@@ -14,7 +14,7 @@ interface CardOrderProps {
 export function CardOrder({ customer = "", code = "", items = {}, observations = "", status = "Nothing", total = 0.0 }: CardOrderProps) {
 
     return (
-        <div className="w-76 h-fit px-4 py-2 gap-16 items-center bg-(--Widget-background) rounded-sm border  border-(--Border2) flex flex-col">
+        <div className="w-76 h-fit px-4 py-6 gap-18 items-center bg-(--Widget-background) rounded-sm border  border-(--Border2) flex flex-col">
 
             <div className="w-full flex flex-col gap-4">
 
@@ -41,7 +41,7 @@ export function CardOrder({ customer = "", code = "", items = {}, observations =
                 </div>
 
                 {/* Observations */}
-                <div className="w-full bg-(--Page-background) rounded-md px-2 py-1   gap-2">
+                <div className="w-full bg-(--Page-background) rounded-md px-4 py-2   gap-2">
                     <p className="text-(--Text-primary-off) text-xs ">Observações:</p>
 
                     <p className="text-(--Text-gray) text-[12px] text-wrap">{observations}</p>
