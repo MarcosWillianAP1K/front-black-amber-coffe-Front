@@ -1,12 +1,8 @@
-import {Teamplate} from "./pages/Teamplate.tsx";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Router"; // Ajuste o caminho se tiver colocado em outra pasta
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Teamplate />
-    </div>
+    <RouterProvider router={router} />
   );
 }
-
-
-export default App;

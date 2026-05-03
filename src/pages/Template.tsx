@@ -1,12 +1,10 @@
-import {NavBarTop}  from "../layout/NavBarTop";
+import { NavBarTop }  from "../layout/NavBarTop";
 import { NavBarLeft } from "../layout/NavBarLeft";
+import { Outlet } from "react-router-dom"; // Importe o Outlet aqui!
 
-
-import { LiveOrders } from "./content/LiveOrders";
-
-export function Teamplate() {
+export function Template() { 
     return (
-        <div className="w-full h-full bg-(--Page-background) ">
+        <div className="w-full h-full bg-(--Page-background)">
             <NavBarTop />
 
             <div className="flex">
@@ -14,13 +12,11 @@ export function Teamplate() {
 
                 {/* Main Content */}
                 <div className="w-full px-6 py-4 scroll-auto">
-                    <LiveOrders />
+                    {/* O Outlet é a janela onde as telas vão aparecer! */}
+                    <Outlet /> 
                 </div>
             </div>
-
-            
         </div>
     );
 }
 
-export default Teamplate;
