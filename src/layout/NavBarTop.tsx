@@ -9,7 +9,7 @@ import {
 export function NavBarTop() {
     return (
 
-        <div className="w-full h-14 bg-(--Nav-bar-background) text-white flex items-center justify-between px-6">
+        <div className="fixed w-full h-14 bg-(--Nav-bar-background) text-white flex items-center justify-between px-6">
 
             <div>
                 <h1 className="text-(--Primary) font-medium font-primary text-lg">Black Amber</h1>
