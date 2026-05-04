@@ -7,7 +7,13 @@ import { APP_ROUTES } from "./utils/Path";
 import { Template } from "./pages/Template";
 
 // Importando as Telas Prontas
+import { Dashboard } from "./pages/content/Dashboard";
+import { Menu } from "./pages/content/Menu";
 import { LiveOrders } from "./pages/content/LiveOrders";
+import { Inventory } from "./pages/content/Inventory";
+import { Analytics } from "./pages/content/Analytics";
+import { Staff } from "./pages/content/Staff";
+
 
 // Componente genérico para as telas não finalizadas
 // eslint-disable-next-line react-refresh/only-export-components
@@ -31,11 +37,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: APP_ROUTES.DASHBOARD,
-                element: <EmConstrucao />
+                element: <Dashboard />
             },
             {
                 path: APP_ROUTES.MENU,
-                element: <EmConstrucao />
+                element: <Menu />
             },
             {
                 path: APP_ROUTES.LIVE_ORDERS,
@@ -43,15 +49,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: APP_ROUTES.INVENTORY,
-                element: <EmConstrucao />
+                element: <Inventory />
             },
             {
                 path: APP_ROUTES.ANALYTICS,
-                element: <EmConstrucao />
+                element: <Analytics />
             },
             {
                 path: APP_ROUTES.STAFF,
-                element: <EmConstrucao />
+                element: <Staff />
             }
         ]
     },

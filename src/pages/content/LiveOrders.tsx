@@ -1,5 +1,5 @@
-import { CardOrder } from "../../components/CardOrder/CardOrder";
-
+import { DestakTitle } from "../../components/DestakTitle";
+import { CardOrder } from "../../components/cardOrder/CardOrder";
 import { ButtonPrimary } from "../../components/buttons/ButtonPrimary";
 
 
@@ -56,6 +56,8 @@ export function LiveOrders() {
     return (
 
         <div className="w-full h-fit gap-6 flex flex-col">
+
+        <DestakTitle title="Orders Queue" subtitle="Manage your live orders" />
 
             <ButtonPrimary>
                 <span>+</span>
