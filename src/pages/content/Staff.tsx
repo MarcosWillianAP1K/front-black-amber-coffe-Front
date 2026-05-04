@@ -1,4 +1,4 @@
-import { DestakTitle } from "../../components/DestakTitle";
+import { DestakTitle } from "../../components/ui/DestakTitle";
 
 export function Staff() {
 

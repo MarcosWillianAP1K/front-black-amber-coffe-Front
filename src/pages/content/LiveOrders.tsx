@@ -1,6 +1,6 @@
-import { DestakTitle } from "../../components/DestakTitle";
+import { DestakTitle } from "../../components/ui/DestakTitle";
 import { CardOrder } from "../../components/cardOrder/CardOrder";
-import { ButtonPrimary } from "../../components/buttons/ButtonPrimary";
+import { ButtonPrimary } from "../../components/ui/ButtonPrimary";
 
 
 export function LiveOrders() {

@@ -1,4 +1,4 @@
-import { ButtonPrimary } from "./buttons/ButtonPrimary";
+import { ButtonPrimary } from "./ButtonPrimary";
 
 
 export function PerfilNav() {
