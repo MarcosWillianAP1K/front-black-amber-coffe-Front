@@ -11,7 +11,7 @@ export function Template() {
                 <NavBarLeft />
 
                 {/* Main Content */}
-                <div className="w-full px-6 py-4 scroll-auto">
+                <div className="w-full px-6 py-2 scroll-auto">
                     {/* O Outlet é a janela onde as telas vão aparecer! */}
                     <Outlet /> 
                 </div>
