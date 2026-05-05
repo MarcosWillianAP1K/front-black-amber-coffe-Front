@@ -1,13 +1,19 @@
 {
-  "name": "front-black-amber-coffe-admin",
+  "name": "black-amber-workspace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "app/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev:admin": "npm run dev -w admin-app",
+    "build:admin": "npm run build -w admin-app",
+    "dev:client": "npm run dev -w client-app",
+    "build:client": "npm run build -w client-app",
+    
+    "dev:all": "concurrently \"npm run dev:admin\" \"npm run dev:client\""
   },
   "dependencies": {
     "lucide-react": "^1.14.0",
@@ -23,6 +29,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",

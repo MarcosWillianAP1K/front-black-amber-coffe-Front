@@ -11,8 +11,8 @@ import {
 
 import { APP_ROUTES } from "../utils/Path";
 
-import { NavItem } from "../components/ui/NavItem";
-import { PerfilNav } from "../components/ui/PerfilNav";
+import { NavItem } from "ui-shared/components/ui/NavItem";
+import { PerfilNav } from "ui-shared/components/ui/PerfilNav";
 
 
 const mainLinks = [

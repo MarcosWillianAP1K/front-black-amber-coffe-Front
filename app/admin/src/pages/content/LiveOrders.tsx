@@ -1,6 +1,6 @@
-import { DestakTitle } from "../../components/ui/DestakTitle";
-import { CardOrder } from "../../components/cardOrder/CardOrder";
-import { ButtonPrimary } from "../../components/ui/ButtonPrimary";
+import { DestakTitle } from "ui-shared/components/ui/DestakTitle";
+import { CardOrder } from "ui-shared/components/cardOrder/CardOrder";
+import { ButtonPrimary } from "ui-shared/components/ui/ButtonPrimary";
 
 
 export function LiveOrders() {

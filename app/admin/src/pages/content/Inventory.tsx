@@ -1,4 +1,4 @@
-import { DestakTitle } from "../../components/ui/DestakTitle";
+import { DestakTitle } from "ui-shared/components/ui/DestakTitle";
 
 
 export function Inventory() {

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+/* Isso manda o Tailwind rastrear as pastas para gerar os estilos! */
+@source "./"; /* Lê os componentes compartilhados (NavItem, etc) */
+@source "../../app/admin/src"; /* Lê as telas do seu painel Admin */
+
 
 
 @theme "dark" {
