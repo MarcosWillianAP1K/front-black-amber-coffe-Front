@@ -50,6 +50,51 @@ export function LiveOrders() {
             observations: "No cream in the americano",
             status: "Canceled",
             total: 11.50
+        },
+        {
+            id: 6,
+            customer: "Emma Davis",
+            code: "ORD-1122",
+            items: { "Mocha": 1, "Brownie": 1 },
+            observations: "Serve without whipped cream",
+            status: "Created",
+            total: 13.40
+        },
+        {
+            id: 7,
+            customer: "Liam Wilson",
+            code: "ORD-3344",
+            items: { "Flat White": 2, "Cookie": 3 },
+            observations: "Cookies on the side",
+            status: "In Progress",
+            total: 18.90
+        },
+        {
+            id: 8,
+            customer: "Olivia Martin",
+            code: "ORD-5566",
+            items: { "Macchiato": 1, "Pie": 1 },
+            observations: "Heat the pie before serving",
+            status: "Ready",
+            total: 16.25
+        },
+        {
+            id: 9,
+            customer: "Noah Garcia",
+            code: "ORD-7788",
+            items: { "Iced Coffee": 2, "Sandwich": 1 },
+            observations: "No ice in one of the coffees",
+            status: "Late",
+            total: 19.80
+        },
+        {
+            id: 10,
+            customer: "Sophia Lee",
+            code: "ORD-9900",
+            items: { "Tea": 1, "Scone": 2 },
+            observations: "Jam on the side",
+            status: "Created",
+            total: 12.10
         }
     ];
 
@@ -66,8 +111,8 @@ export function LiveOrders() {
 
             </ButtonPrimary>
 
-            {/* Cards */}
-            <div className="w-full h-fit px-8 flex gap-6 flex-wrap justify-start">
+            {/* Cards */}\
+            <div className="w-fit h-fit px-12 flex gap-6 flex-wrap justify-start">
                 {orders.map(order => (
                     <CardOrder
                         customer={order.customer}

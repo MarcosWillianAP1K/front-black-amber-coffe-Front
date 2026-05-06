@@ -26,7 +26,7 @@ const mainLinks = [
 
 export function NavBarLeft() {
     return (
-        <aside className="w-fit h-screen bg-(--Widget-background) flex flex-col py-6 gap-6">
+        <aside className="w-64 h-full bg-(--Widget-background) flex flex-col py-6 gap-6">
 
             {/* SEÇÃO 1: Perfil do Usuário */}
             <PerfilNav />
