@@ -10,7 +10,7 @@ export function Template() {
                 <NavBarTop />
             </div>
 
-            <div className="w-full h-screen flex flex-1 overflow-hidden">
+            <div className="w-full h-full flex flex-1 overflow-hidden">
 
                 <NavBarLeft />
 
