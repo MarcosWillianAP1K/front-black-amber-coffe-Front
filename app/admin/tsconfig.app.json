@@ -17,7 +17,8 @@
 
     /* O Segredo do Monorepo: Atalhos diretos! */
     "paths": {
-      "ui-shared/*": ["../../packages/ui-shared/*"]
+      "ui-shared/*": ["../../packages/ui-shared/*"],
+      "shared-utils/*": ["../../packages/utils/*"]
     },
 
     /* Linting */
@@ -27,5 +28,5 @@
     "noFallthroughCasesInSwitch": true
   },
   /* Agora os caminhos estão corretos partindo da pasta app/admin/ */
-  "include": ["src", "../../packages/ui-shared"]
+  "include": ["src", "../../packages/ui-shared", "../../packages/utils"]
 }
