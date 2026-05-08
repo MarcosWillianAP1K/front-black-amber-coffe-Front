@@ -90,9 +90,9 @@ export function TableMenu({
     const editingItem = panelState.mode === "edit" ? panelState.item : null;
 
     return (
-        <div className="flex w-full h-full gap-0">
+        <div className="flex w-full h-fit gap-10">
             {/* Table Section */}
-            <div className={`flex flex-col flex-1 min-w-0 transition-all duration-300 ${isPanelOpen ? "mr-0" : ""}`}>
+            <div className={`w-full h-[680px] p-4 rounded-md flex flex-col min-w-0 bg-(--Widget-background) transition-all duration-300 ${isPanelOpen ? "mr-0" : ""}`}>
                 <TableMenuHeader title={title} isLive={isLive} />
 
                 {/* Table */}

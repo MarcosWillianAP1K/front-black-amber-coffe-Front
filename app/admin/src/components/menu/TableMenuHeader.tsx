@@ -12,7 +12,7 @@ export function TableMenuHeader({
     isLive = true,
 }: TableMenuHeaderProps) {
     return (
-        <div className="flex items-center justify-between w-full mb-6">
+        <div className="flex items-center justify-between w-full">
             <h2 className="text-(--Primary) text-xl font-primary font-extrabold tracking-wide uppercase">
                 {title}
             </h2>

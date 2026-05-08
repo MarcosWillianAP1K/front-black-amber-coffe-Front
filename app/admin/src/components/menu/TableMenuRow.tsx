@@ -22,13 +22,10 @@ export function TableMenuRow({
 }: TableMenuRowProps) {
     return (
         <tr
-            className={`
-                border-b border-(--Border) transition-colors duration-200
-                ${isSelected ? "bg-[#2a2418]" : "hover:bg-[#1f1f1f]"}
-            `}
+            className={`transition-colors duration-200 ${isSelected ? "bg-(--Select-background)" : "hover:bg-(--Select-background)"}`}
         >
             {/* Item: Image + Name + Description */}
-            <td className="py-4 pr-4">
+            <td className="py-3 pr-4">
                 <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-md overflow-hidden bg-(--Button-background) shrink-0">
                         {item.imageUrl ? (
