@@ -7,7 +7,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import type { MenuItem, MenuItemFormData } from "shared-utils/types/menu";
-import type { MenuItemHandlers } from "../components/menu/TableMenu";
+import type { MenuItemHandlers } from "../components/tableMenu/TableMenu";
 import * as menuService from "../services/menuService";
 
 interface UseMenuItemsReturn {

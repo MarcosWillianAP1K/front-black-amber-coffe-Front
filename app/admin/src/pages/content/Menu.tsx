@@ -1,5 +1,5 @@
 import { DestakTitle } from "ui-shared/components/ui/DestakTitle";
-import { TableMenu } from "../../components/menu/TableMenu";
+import { TableMenu } from "../../components/tableMenu/TableMenu";
 import { useMenuItems } from "../../hooks/useMenuItems";
 
 

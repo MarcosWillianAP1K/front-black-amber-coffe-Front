@@ -40,13 +40,7 @@ type PanelState =
     | { mode: "edit"; item: MenuItem }
     | { mode: "create" };
 
-export function TableMenu({
-    items,
-    handlers,
-    title = "ACTIVE MENU",
-    isLive = true,
-    categories,
-}: TableMenuProps) {
+export function TableMenu({ items, handlers, title = "ACTIVE MENU", isLive = true, categories, }: TableMenuProps) {
     const [panelState, setPanelState] = useState<PanelState>({ mode: "closed" });
 
     const handleEditClick = useCallback((item: MenuItem) => {

@@ -1,6 +1,6 @@
 import { DestakTitle } from "ui-shared/components/ui/DestakTitle";
 import { ButtonPrimary } from "ui-shared/components/ui/ButtonPrimary";
-import { CardOrder } from "../../components/orders/CardOrder";
+import { CardOrder } from "../../components/cardOrder/CardOrder";
 import { useOrders } from "../../hooks/useOrders";
 
 
