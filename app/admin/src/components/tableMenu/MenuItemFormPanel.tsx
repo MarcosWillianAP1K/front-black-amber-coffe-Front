@@ -33,12 +33,7 @@ const EMPTY_FORM: MenuItemFormData = {
     imageFile: null,
 };
 
-export function MenuItemFormPanel({
-    editingItem,
-    onSave,
-    onCancel,
-    categories = MENU_CATEGORIES,
-}: MenuItemFormPanelProps) {
+export function MenuItemFormPanel({ editingItem, onSave, onCancel, categories = MENU_CATEGORIES, }: MenuItemFormPanelProps) {
     const isEditing = editingItem !== null;
     const fileInputRef = useRef<HTMLInputElement>(null);
 

@@ -14,16 +14,9 @@ interface TableMenuRowProps {
     onDelete: (id: string) => void;
 }
 
-export function TableMenuRow({
-    item,
-    isSelected = false,
-    onEdit,
-    onDelete,
-}: TableMenuRowProps) {
+export function TableMenuRow({ item, isSelected = false, onEdit, onDelete, }: TableMenuRowProps) {
     return (
-        <tr
-            className={`transition-colors duration-200 ${isSelected ? "bg-(--Select-background)" : "hover:bg-(--Select-background)"}`}
-        >
+        <tr className= {`transition-colors duration-200 ${isSelected ? "bg-(--Select-background)" : "hover:bg-(--Select-background)"}`}>
             {/* Item: Image + Name + Description */}
             <td className="py-3 pr-4">
                 <div className="flex items-center gap-3">

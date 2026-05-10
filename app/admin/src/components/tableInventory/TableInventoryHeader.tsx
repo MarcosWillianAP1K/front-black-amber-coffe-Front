@@ -1,13 +1,13 @@
 /**
- * TableMenuHeader — Top section of the table with title and live status indicator.
+ * TableInventoryHeader — Top section of the inventory table with title and live status.
  */
 
-interface TableMenuHeaderProps {
+interface TableInventoryHeaderProps {
     title?: string;
     isLive?: boolean;
 }
 
-export function TableMenuHeader({title = "ACTIVE MENU", isLive = true,}: TableMenuHeaderProps) {
+export function TableInventoryHeader({title = "INVENTORY", isLive = true}: TableInventoryHeaderProps) {
     return (
         <div className="flex items-center justify-between w-full">
             <h2 className="text-(--Primary) text-xl font-primary font-extrabold tracking-wide uppercase">
