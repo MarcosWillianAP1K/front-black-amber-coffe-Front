@@ -84,7 +84,7 @@ export function Dashboard() {
             </div>
 
             {/* Main content */}
-            <div className="flex flex-col 2xl:flex-row gap-6">
+            <div className="flex flex-row gap-6">
                 {/* Priority orders */}
                 <section className="w-full 2xl:flex-2 h-200 bg-(--Widget-background) rounded-md border border-(--Border) p-5 flex flex-col gap-4">
                     <div className="flex flex-wrap items-center justify-between gap-3 border-b border-(--Border) pb-3">
@@ -120,7 +120,7 @@ export function Dashboard() {
                 </section>
 
                 {/* Side widgets */}
-                <div className="w-full h-100 2xl:flex-1 flex flex-col gap-6">
+                <div className="w-160 h-100 2xl:flex-1 flex flex-col gap-6">
                     {/* Inventory alerts */}
                     <section className="w-full h-95 bg-(--Widget-background) rounded-md border border-(--Border) p-5 flex flex-col gap-4">
                         <div className="flex items-center justify-between border-b border-(--Border) pb-3">
