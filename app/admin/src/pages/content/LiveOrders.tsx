@@ -18,7 +18,7 @@ export function LiveOrders() {
             </ButtonPrimary>
 
             {/* Cards */}
-            <div className="w-fit h-fit px-12 flex gap-6 flex-wrap justify-start">
+            <div className="w-fit h-fit px-12 flex gap-5 flex-wrap justify-start">
                 {orders.map((order) => (
                     <CardOrder
                         key={order.id}
