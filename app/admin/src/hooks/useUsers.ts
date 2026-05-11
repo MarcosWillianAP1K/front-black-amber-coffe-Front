@@ -14,7 +14,7 @@ interface UseUsersReturn {
     isLoading: boolean;
     handleOptions: (id: string) => void;
     deleteUser: (id: string) => void;
-    toggleStatus: (id: string) => void;
+    toggleUserStatus: (id: string) => void;
 }
 
 export function useUsers(): UseUsersReturn {
@@ -45,7 +45,7 @@ export function useUsers(): UseUsersReturn {
         setUsers((prev) => prev.filter((u) => u.id !== id));
     }, []);
 
-    const toggleStatus = useCallback(async (id: string) => {
+    const toggleUserStatus = useCallback(async (id: string) => {
         const user = users.find((u) => u.id === id);
         if (!user) return;
 
@@ -58,6 +58,6 @@ export function useUsers(): UseUsersReturn {
         isLoading,
         handleOptions,
         deleteUser,
-        toggleStatus,
+        toggleUserStatus,
     };
 }

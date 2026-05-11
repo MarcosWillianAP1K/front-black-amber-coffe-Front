@@ -16,7 +16,7 @@ export function SectionUsers({ users, title, onDeleteUser, onBlockUser, onViewUs
         <div className="w-full h-140 flex flex-col px-4 py-2 gap-4 bg-(--Widget-background) rounded-md">
 
             {/* header */}
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row justify-between items-center pb-2 border-b border-(--Border)">
 
                 {/* Title */}
                 <h1 className="w-full h-fit text-(--Primary-off) text-[24px] font-primary font-bold">

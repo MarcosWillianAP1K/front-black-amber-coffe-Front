@@ -15,7 +15,7 @@ interface InfosUserProps {
 
 export function InfosUser({ orders, saved, score }: InfosUserProps) {
     return (
-        <div className="w-full h-fit flex justify-center items-center flex-row gap-12">
+        <div className="w-full h-fit flex justify-center items-center flex-row gap-12 px-4">
 
             {/* Orders */}
             <div className="flex flex-col justify-center items-center gap-2">
