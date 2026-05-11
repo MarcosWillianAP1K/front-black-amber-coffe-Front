@@ -9,3 +9,6 @@ export { ORDER_STATUSES } from "./order";
 
 export type { InventoryItem, InventoryAddStockData, InventoryEditData, InventoryUnit, StockStatus } from "./inventory";
 export { INVENTORY_UNITS, UNIT_LABELS, STOCK_STATUSES, deriveStockStatus } from "./inventory";
+
+export type { User, UserJob } from "./user";
+export { USER_JOBS } from "./user";
