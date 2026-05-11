@@ -55,7 +55,7 @@ export function CardAnalytics({
 
     return (
         <div
-            className={`w-full h-full min-h-[116px] px-4 py-4 bg-(--Widget-background) rounded-md border border-(--Border) flex flex-col justify-between ${className}`}
+            className={`w-full h-full min-h-29 px-4 py-4 bg-(--Widget-background) rounded-md border border-(--Border) flex flex-col justify-between ${className}`}
         >
             <div className="w-full flex items-start justify-between">
                 <div className="flex flex-col gap-2">
