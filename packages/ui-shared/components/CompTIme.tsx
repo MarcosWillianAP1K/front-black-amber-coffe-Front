@@ -33,7 +33,7 @@ export function CompTime({ bankHours, start, lunch, end, active }: compTimeProps
 
             <div className="flex flex-row gap-2 items-center">
                 <p className="text-(--Text-primary-off) text-[12px] font-secondary">Comp Time</p>
-                <div className={`rounded-full ${active ? "bg-(--Afirmation)" : "bg-(--Negacion)"} w-3.5 h-3.5`}/>
+                <div className={`rounded-full ${active ? "bg-(--Afirmation) shadow-[0_0_8px_var(--Afirmation)]" : "bg-(--Select-background)"} w-3.5 h-3.5`}/>
             </div>
 
             <div className="flex justify-between">

@@ -14,7 +14,7 @@ export function Staff() {
 
             <SectionEmployee
                 employees={employees}
-                title="Employees"
+                title="Staff"
                 onDeleteEmployee={deleteEmployee}
                 onBlockEmployee={toggleEmployeeStatus}
                 onViewEmployee={(id) => console.log("View employee:", id)}
@@ -22,7 +22,7 @@ export function Staff() {
 
             <SectionUsers
                 users={users}
-                title="Staff"
+                title="Users"
                 onDeleteUser={deleteUser}
                 onBlockUser={toggleUserStatus}
                 onViewUser={(id) => console.log("View user:", id)}

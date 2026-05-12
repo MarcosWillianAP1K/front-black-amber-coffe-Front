@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate to={APP_ROUTES.LIVE_ORDERS} replace />
+                element: <Navigate to={APP_ROUTES.DASHBOARD} replace />
             },
             {
                 path: APP_ROUTES.DASHBOARD,
